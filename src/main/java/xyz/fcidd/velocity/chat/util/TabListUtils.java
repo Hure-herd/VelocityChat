@@ -9,6 +9,7 @@ import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.format.Style;
 import net.kyori.adventure.text.format.TextColor;
 import net.kyori.adventure.text.format.TextDecoration;
+import net.kyori.adventure.util.HSVLike;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.Collection;
@@ -43,7 +44,7 @@ public class TabListUtils {
 					.setDisplayName(Component
 						.text(player2.getUsername())
 						.style(Style
-							.style(TextColor.color(0x6D8BBF),
+							.style(TextColor.color(HSVLike.fromRGB(169,169,169)),
 								TextDecoration.UNDERLINED,
 								TextDecoration.ITALIC))));
 			}
